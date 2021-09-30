@@ -1,5 +1,120 @@
+/***********************GLOBALE****************************/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+/***********************HEADER****************************/
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  height: 80px;
+  background-color: black;
+}
+
+header .text-box, header .arrow-box {
+  color: white;
+  background-color: #3f3f3f;
+  padding: 7px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+header .text-box {
+  position: relative;
+}
+
+header .text-box i {
+  position: absolute;
+  top: 8px;
+  right: 101px;
+}
+
+
+
+
+
+/***********************MAIN****************************/
+
+main {
+  height: calc(100vh - 160px);
+  background-color: purple;
+  color: #fff;
+}
+
+
+
+/***********************FOOTER****************************/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #222222;
+  color: #fff;
+}
+
+/*********************** NAV-LEFT *****************/
+
+.nav-left{
+  width: 20%;
+}
+
+.nav-left ul{
+  display: flex;
+  list-style: none;
+
+}
+.nav-left ul li{
+  text-align: center;
+  cursor: pointer;
+}
+.nav-left ul li i{
+  font-size: 35px;
+}
+
+.nav-left ul li p{
+  padding: 5px;
+}
+
+/*********************** NAV-CENTER *****************/
+.nav-center{
+  width: 60%;
+}
+
+.nav-center ul{
+  display: flex;
+  list-style: none;
+
+}
+.nav-center ul li{
+  text-align: center;
+  cursor: pointer;
+}
+.nav-center ul li i{
+  font-size: 35px;
+  padding: 3px 0;
+  margin: 0 15px;
+}
+
+.nav-center ul li p{
+  padding: 5px;
+}
+
+/*********************** NAV-RIGHT *****************/
+
+.nav-right{
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+}
+
+.nav-right .closer {
+  background-color: #4a4a4a;
+  color: red;
 }
