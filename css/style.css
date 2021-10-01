@@ -32,27 +32,34 @@ header .text-box, header .arrow-box {
 /***********************MAIN****************************/
 
 main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   height: calc(100vh - 160px);
-  background-color: purple;
-  color: #fff;
+  overflow: auto;
+  background-color: black;
 }
 
 .photo-book {
   position: relative;
+  width: 250px;
+  height: 150px;
+  border: 2px solid black;
 }
 
-.img-main {
-  width: 13%;
-  object-fit: cover;
+.photo-book .img-main {
+  height: 100%;
+  height: 100%;
   margin: 0 30px;
 }
 
-.mic-muted{
+.photo-book .mic-muted{
   position: absolute;
-  top: 85px;
-  left: 30px;
-  padding: 5px;
+  left: 0;
+  bottom: 0;
+  color: white;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
 }
 
 
@@ -66,9 +73,10 @@ footer {
   height: 80px;
   background-color: #222222;
   color: #fff;
+  flex-shrink: 0;
 }
 
-/*********************** NAV-LEFT *****************/
+/******** NAV-LEFT ********/
 
 .nav-left{
   width: 20%;
@@ -91,7 +99,7 @@ footer {
   padding: 5px;
 }
 
-/*********************** NAV-CENTER *****************/
+/********** NAV-CENTER ************/
 .nav-center{
   width: 60%;
 }
@@ -115,15 +123,17 @@ footer {
   padding: 5px;
 }
 
-/*********************** NAV-RIGHT *****************/
+/********* NAV-RIGHT *******/
 
-.nav-right{
-  display: flex;
-  justify-content: flex-end;
-  width: 20%;
+.nav-right {
+  height: 100%;
 }
 
-.nav-right .closer {
-  background-color: #4a4a4a;
+.nav-right button{
+  height: 100%;
   color: red;
+  background-color: #4a4a4a;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
 }
